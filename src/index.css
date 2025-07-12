@@ -1,0 +1,50 @@
+/* @import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Mochiy+Pop+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Mochiy+Pop+One&family=Reggae+One&display=swap");
+
+@import "tailwindcss";
+@import 'tailwind-scrollbar-hide/v4';
+
+
+
+body {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(203, 78, 78, 0.8); /* Glass-like */
+  backdrop-filter: blur(4px);
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  scroll-behavior: smooth;
+}
+
+/* @font-face{
+  font-family: "DotGothic"
+} */
+
+@font-face {
+  font-family: Swomp-outline;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+   src: url("../src/assets/fonts/Swomp-Outline.ttf") format('woff2');
+}
+
+@theme{
+    --font-swomp-Outline : Swomp-outline , "sans-serif";
+    --font-DotGothic : "DotGothic16" , sans-serif;
+    --font-Reggae :"Reggae One" , sans-serif;
+    --font-Mochi :"Mochiy Pop One" , sans-serif
+}
