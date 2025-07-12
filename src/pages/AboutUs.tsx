@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react"
-import { AnimatePresence, hover, motion } from "motion/react"
+import { AnimatePresence,  motion } from "motion/react"
 import HelloIntro from "../Components/HelloIntro"
 import ThreedRender from "../Components/3dRendered"
 import WhoWe from "../Components/WhoWe"

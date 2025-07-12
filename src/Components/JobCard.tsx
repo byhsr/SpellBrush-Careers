@@ -1,5 +1,5 @@
 import { easeInOut, motion, spring } from "framer-motion";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext,  useState } from "react";
 import { Link } from "react-router-dom";
 import { jobContext } from "../pages/HomeLayout";
 import "./Styles/JobCard.css"
