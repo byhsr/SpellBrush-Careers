@@ -39,7 +39,7 @@ const HomeLayout = () => {
  }, [location])
  
 useEffect(() => {
-  const isMobile = window.innerWidth <= 768;
+
 
   if (showCards ) {
     window.scrollTo({ top: 0, behavior: "instant" });
