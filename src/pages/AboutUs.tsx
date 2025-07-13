@@ -30,7 +30,7 @@ const AboutUs = () => {
 
                 {/* left div */}
 
-                <div className=" w-full border  lg:w-[50%] h-[30%] ">
+                <div className=" w-full   lg:w-[50%] h-[30%] ">
                     <motion.div
                         onMouseEnter={() => setHoverNiji(true)}
                         onMouseLeave={() => setHoverNiji(false)}
