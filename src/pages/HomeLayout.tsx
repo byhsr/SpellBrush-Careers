@@ -41,10 +41,11 @@ const HomeLayout = () => {
 useEffect(() => {
   const isMobile = window.innerWidth <= 768;
 
-  if (showCards && isMobile) {
+  if (showCards ) {
+    window.scrollTo({ top: 0, behavior: "instant" });
     document.body.style.height = "100vh";
     document.body.style.overflowY = "hidden";
-    window.scrollTo({ top: 0, behavior: "instant" });
+    
   }
 
   return () => {
