@@ -15,7 +15,7 @@ const Frontend = () => {
 
   const onScroll = () => {
     const progress = el.scrollTop    
-    if(progress>200){
+    if(progress>190){
       setRead(true)
     }
   };
