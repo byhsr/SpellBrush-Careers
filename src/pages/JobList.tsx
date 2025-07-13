@@ -50,7 +50,7 @@ useEffect(() => {
       }
 
       // h-screen w-full
-     className="bg-zinc-900 border-zinc-800 border-4 backdrop-blur-3xl absolute inset-8 top=5 rounded-2xl z-50 flex justify-center items-center 
+     className="bg-zinc-900 border-zinc-800 border-4 backdrop-blur-3xl absolute inset-0 lg:inset-8 top=5 rounded-2xl z-50 flex justify-center items-center 
        ">
         <p className="absolute top-0 text-[200px] opacity-45 font-swomp-Outline z-10 text-[#F0555D]">Spell Brush</p>
         <p className="absolute bottom-0 text-[200px] opacity-45 font-swomp-Outline z-10 text-[#F0555D]">Careers</p>
