@@ -35,6 +35,7 @@ const JobCard= ({ id ,imgSrc, jobTitle, jobDes } : jobCardPropType) => {
 
   return (
     <div className="flip w-[300px] h-[400px] lg:w-[400px] lg:h-[500px] inline-block  shrink-0 cursor-pointer" >
+      
       <motion.div
         key={id}
         whileHover={{y:-10}}
@@ -52,12 +53,12 @@ const JobCard= ({ id ,imgSrc, jobTitle, jobDes } : jobCardPropType) => {
             ease: easeInOut  , duration: 0.7}}
       >
         {/* Front side */}
-        <div className="absolute w-full h-full bg-zinc-900 
+        <div className="absolute w-full h-full bg-[#F0555D]
          text-black font-Mochi flex flex-col items-center text-xl font-bold backface-hidden rounded-xl">
             <div className="h-[85%] w-full  flex flex-col p-4 pb-4 " onClick={handleClick}
             
             >
-              <img className="h-[80%] object-cover" src={imgSrc} alt="card image" />
+              <img className="h-[80%] rounded-2xl object-cover" src={imgSrc} alt="card image" />
               <div className="py-3"><p className="text-zinc-300 text-lg lg:text-2xl font-DotGothic ">{jobTitle}</p>
               <p className="text-zinc-300 font-DotGothic text-sm lg:text-lg font-light">{jobDes}</p></div>
             </div>
@@ -66,7 +67,7 @@ const JobCard= ({ id ,imgSrc, jobTitle, jobDes } : jobCardPropType) => {
             
             onClick={()=> setShowCards(p=> !p)} 
             to={id}
-            className="h-[10%] w-[95%] mb-1 rounded-xl p-3 flex font-Reggae justify-end overflow-clip border  bg-[#F0555D] ">
+            className="h-[10%] w-[95%] mb-1 rounded-xl p-3 flex font-DotGothic text-gray-50 justify-end overflow-clip  bg-zinc-800 ">
               
                   More Details
             </Link >

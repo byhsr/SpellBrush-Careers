@@ -38,17 +38,20 @@ const HomeLayout = () => {
  }
  }, [location])
  
- useEffect(()=>{
-   if(showCards){
-    document.body.style.height="100vh"
-    document.body.style.overflowY= "hidden"
-    window.scrollTo({ top: 0, behavior: "instant" });
-   }
+useEffect(() => {
+  const isMobile = window.innerWidth <= 768;
 
-   return ()=> {
-      document.body.style.overflowY="auto"
-   } 
-}, [showCards])
+  if (showCards && isMobile) {
+    document.body.style.height = "100vh";
+    document.body.style.overflowY = "hidden";
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }
+
+  return () => {
+    document.body.style.overflowY = "auto";
+    document.body.style.height = "auto"; 
+  };
+}, [showCards]);
 
 
   return (
@@ -68,7 +71,7 @@ const HomeLayout = () => {
       <div 
       className="footer fixed bottom-0  h-[10%] px-6  w-screen z-50  flex justify-between transition-all duration-250">
 
-        <a href="/" className="w-[50px] "><img src={logo} className="" alt="spell brush logo" /></a>  
+        {!showCards && <a href="/" className="w-[50px] "><img src={logo} className="" alt="spell brush logo" /></a> } 
        <div className="mr-35 ">{!showCards && introDone  && <GrowNav title="Explore jobs" />}</div>
         
       </div>

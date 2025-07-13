@@ -50,9 +50,11 @@ useEffect(() => {
       }
 
       // h-screen w-full
-     className="bg-white/5 backdrop-blur-3xl absolute inset-0 z-50 flex justify-center items-center 
+     className="bg-zinc-900 border-zinc-800 border-4 backdrop-blur-3xl absolute inset-8 top=5 rounded-2xl z-50 flex justify-center items-center 
        ">
-        <p onClick={()=>setShowCards(p => !p)} className="fixed top-4 left-6 bg-[#F0555D] text-white px-3 py-1 rounded hover:scale-105 transition-scale ease-in duration-75">close</p>
+        <p className="absolute top-0 text-[200px] opacity-45 font-swomp-Outline z-10 text-[#F0555D]">Spell Brush</p>
+        <p className="absolute bottom-0 text-[200px] opacity-45 font-swomp-Outline z-10 text-[#F0555D]">Careers</p>
+        <p onClick={()=>setShowCards(p => !p)} className="fixed z-50 top-4 left-6 bg-[#F0555D] text-white px-3 py-1 rounded hover:scale-105 transition-scale ease-in duration-75">close</p>
 
 
         <div className="flex flex-col  relative w-[90%] lg:w-[100%] h-[90%] ">
@@ -60,7 +62,7 @@ useEffect(() => {
        
         <div 
          ref={scrollRef}
-        className="space-x-3 flex rounded-xl px-4
+        className="space-x-3 flex  bg-transparent rounded-xl px-4
          overflow-x-auto whitespace-nowrap scrollbar-hide h-full scroll-smooth relative z-10  items-center " >
           <JobCard  id='frontend' imgSrc={frontEnd} jobTitle="Front-End Eng (anime)" jobDes="remote/san-francisco"/>
           <JobCard  id='llm-eng' imgSrc={llmbanner} jobTitle="LLM Engineer" jobDes="san-francisco"/>
@@ -73,7 +75,7 @@ useEffect(() => {
             
             <div 
        
-        className=" fixed bottom-15 right-9 z-20 text-lg  flex justify-end">
+        className=" fixed bottom-15 right-9 z-20 text-lg text-[#F0555D] flex justify-end">
           {/* <ScrollEffect/> */}
           <p>scroll on cards to explore jobs</p>
         </div>
