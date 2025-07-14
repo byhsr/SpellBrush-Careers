@@ -25,7 +25,7 @@ const JobCard= ({ id ,imgSrc, jobTitle, jobDes } : jobCardPropType) => {
     const isFlipped = flipped?.[id] ||  false
 
   const handleClick  = ()  => {
-    console.log('handleClicked', isFlipped)
+   
        setFlipped( prev => ({ ...prev , [id] : !prev?.[id]}))
   }
        
@@ -86,7 +86,7 @@ const JobCard= ({ id ,imgSrc, jobTitle, jobDes } : jobCardPropType) => {
          justify-center text-xl bg-cover font-bold backface-hidden rotate-y-180 rounded-xl">
        <p 
         
-        className={`relative top-30 ${hoveredCard?'opacity-100' : 'opacity-0'} transition-all ease-in duration-400`}>Click anywhere for magic</p> 
+        className={`relative top-30 opacity-100 font-DotGothic text-[12px] lg:text-xl ${hoveredCard?'lg:opacity-100' : 'lg:opacity-0'} transition-all ease-in duration-400`}>Click anywhere for magic</p> 
         </motion.div>
       </motion.div>
     </div>

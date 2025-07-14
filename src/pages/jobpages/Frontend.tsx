@@ -38,9 +38,9 @@ const Frontend = () => {
       ring-1 ring-white/25  backdrop-blur-[65px] border  border-white/50 shadow-2xl overflow-y-auto lg:overflow-hidden h-[300vh]
        lg:h-auto shadow-black/10 bg-white/30 flex flex-col gap-4 lg:gap-0 lg:flex-row rounded ">
 
-        <div className="lg:w-[40%] w-full h-[600px] lg:h-full  lg:static z-5 flex flex-col bg-zinc-100/70   rounded lg:rounded-r-none items-center font-DotGothic  ">
+        <div className="lg:w-[40%] w-full h-[1000px] lg:h-full  lg:static z-5 flex flex-col bg-zinc-100/70   rounded lg:rounded-r-none items-center font-DotGothic  ">
           
-          <div className="rounded h-[60%] p-2 "><img className="rounded  h-[90%]" src={forntEnd} alt="" /><h1 className="text-3xl my-4 ">Front-End Engineer</h1>
+          <div className="rounded h-[60%] p-2 "><img className="rounded bg-center h-[90%]" src={forntEnd} alt="" /><h1 className="text-2xl lg:text-3xl my-4 ">Front-End Engineer</h1>
             <hr />
           </div>
 

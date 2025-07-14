@@ -25,8 +25,9 @@ const HomeLayout = () => {
  const [flipped , setFlipped] = useState<{[id:string]: boolean}>({})
  const [introDone, setIntroDone] = useState<boolean>(false)
  const [loading , setLoading] = useState<boolean>(true)
+ 
  useEffect(() => {
-  console.log('this is in home', flipped);
+ 
 }, [flipped]);
 
  const location =  useLocation()
