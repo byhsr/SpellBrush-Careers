@@ -37,7 +37,7 @@ const AiResearch= () => {
       ring-1 ring-white/25  backdrop-blur-[65px] border  border-white/50 shadow-2xl overflow-y-auto lg:overflow-hidden h-[400vh]
        lg:h-auto shadow-black/10 bg-white/30 flex flex-col gap-4    lg:gap-0 lg:flex-row rounded ">
 
-        <div className="lg:w-[40%] w-full h-[800px] lg:h-full  lg:static z-5 flex flex-col bg-zinc-100/70   rounded lg:rounded-r-none items-center   ">
+        <div className="lg:w-[40%] w-full h-[1000px] lg:h-full  lg:static z-5 flex flex-col bg-zinc-100/70   rounded lg:rounded-r-none items-center   ">
           <div className=" h-[60%] p-2 "><img className="rounded h-[90%]" src={AiReseacher} alt="" /><h1 className="text-2xl lg:text-3xl text-blue-950 my-4 font-DotGothic font-bold">AI Anime Researcher</h1>
             <hr />
           </div>
